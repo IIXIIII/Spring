@@ -1,0 +1,41 @@
+can be used as a framework for:
+
+  loggin
+  security
+  Matrics 
+  Connecting to DB
+  dependency injection 
+  Great
+  configuration
+
+# project Overview 
+  Backend 
+  Full stack
+
+Client 
+  API Layer: get, post, put, delete
+
+Service Layer
+
+Data Access Layer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
