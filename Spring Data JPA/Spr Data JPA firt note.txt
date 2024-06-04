@@ -1,0 +1,23 @@
+JPA - Java Persistence API 
+
+Spring Data JPA - Hibernate 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
