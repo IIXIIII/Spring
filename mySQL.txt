@@ -1,1 +1,12 @@
+Data Type:
+Tinyint: 1bit
+Smallint: 2bit
+mediumint: 3bit 
+Int or Integer: 4bit 
+BigInt: 8 bit
+Float: 4bit 
+Double: 8bit 
+Decimal:
+
+
 
