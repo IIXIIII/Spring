@@ -8,5 +8,98 @@ Float: 4bit
 Double: 8bit 
 Decimal:
 
+# Bash for MySQL:
 
+  mysql -u root -p
+  //entering mysql, -u: the user name. -p: the passward
+
+  exit
+  //
+
+  SHOW DATABASES;
+  //show all the databases in the mysql
+
+  创建数据库
+  CREATE DATABASE name
+  //create a database the name: name
+    CHARACTOR SET ___
+    COLLATE     ;
+
+-------
+mysql> CREATE DATABASE test
+    ->   CHARACTER SET utf8mb4
+    ->   COLLATE utf8mb4_general_ci;
+Query OK, 1 row affected (0.01 sec)
+--------
+mysql> SHOW DATABASES
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| test               |
++--------------------+
+5 rows in set (0.00 sec)
+---------
+
+  use test;
+  //enter the database that is called test, every bash should end with a ";"
+
+  创建数据库表
+  CREATE TABLE student (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    age INT
+  );
+
+--------
+mysql> CREATE TABLE student (
+    ->   id INT AUTO_INCREMENT PRIMARY KEY,
+    ->   name VARCHAR(50) NOT NULL,
+    ->   email VARCHAR(100) NOT NULL,
+    ->   age INT
+    -> );
+Query OK, 0 rows affected (0.03 sec)
+----------
+
+  show tables;
+  //show all the elements that are in the table of the database
+
+-----------
+mysql> show tables;
++----------------+
+| Tables_in_test |
++----------------+
+| student        |
++----------------+
+1 row in set (0.00 sec)
+-------------
+
+  select * from student;
+
+
+Drive for the mySQL:
+
+    <dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+add the dependency in the the pom.xml file.
+
+
+
+
+
+
+
+
+
+
+  
 
